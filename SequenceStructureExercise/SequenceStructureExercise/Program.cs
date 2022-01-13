@@ -8,7 +8,7 @@
  */
 using System;
 
-namespace SequenceStructureExercise
+namespace ExerciseOne
 {
     internal class Program
     {
