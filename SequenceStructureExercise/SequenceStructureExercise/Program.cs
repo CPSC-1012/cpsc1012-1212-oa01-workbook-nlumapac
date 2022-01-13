@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* Purpose: To display the name, age, and annual pay
+ * 
+ * Input:   1) name
+ *          2) age
+ *          3) annual pay
+ * 
+ * Output: Displays an output message with the name, age, and annual pay
+ */
+using System;
 
 namespace SequenceStructureExercise
 {
