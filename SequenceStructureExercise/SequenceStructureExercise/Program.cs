@@ -6,7 +6,18 @@ namespace SequenceStructureExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("My name is Nino Angelo, my age is 31 and I hope to earn $250,000.00 per year");
+            // Declare variables
+            string name;
+            int age;
+            double annualPay;
+
+            // Assign values to variables
+            name = "Nino Angelo Lumapac";
+            age = 31;
+            annualPay = 250000.00;
+
+            // Display the message
+            Console.WriteLine($"My name is {name}, my age is {age} and I hope to earn {annualPay:C} per year");
         }
     }
 }
