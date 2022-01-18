@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputeAverageApp", "ComputeAverageApp\ComputeAverageApp.csproj", "{A25B9505-B942-48D8-9704-57350875B27C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PythagoreanTheoremApp", "PythagoreanTheoremApp\PythagoreanTheoremApp.csproj", "{CAC08AAB-F9C3-4F27-81AA-23973C908212}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A25B9505-B942-48D8-9704-57350875B27C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A25B9505-B942-48D8-9704-57350875B27C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A25B9505-B942-48D8-9704-57350875B27C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAC08AAB-F9C3-4F27-81AA-23973C908212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC08AAB-F9C3-4F27-81AA-23973C908212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC08AAB-F9C3-4F27-81AA-23973C908212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC08AAB-F9C3-4F27-81AA-23973C908212}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
