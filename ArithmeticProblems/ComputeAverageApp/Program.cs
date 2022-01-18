@@ -30,7 +30,7 @@ namespace ComputeAverageApp
             double average = (number1 + number2 + number3) / 3;
 
             // Display result
-            Console.Write($"The average is {average}");
+            Console.Write($"The average is {average:F2}");
         }
     }
 }
