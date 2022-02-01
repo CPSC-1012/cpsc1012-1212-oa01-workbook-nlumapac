@@ -6,33 +6,40 @@ namespace GuessNumber
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("This is number guessing game.");
+            const int MinValue = 1;
+            const int MaxValue = 100;
+            const int MaxAttempts = 5;
+            int userAttempts = 0;
             // Generate a random number to be guessed
             Random keygen = new Random();
-            int number = keygen.Next(1, 101);
-
-            // Prompt the user to guess the number
-            Console.Write("Enter your guess: ");
-            int guess = int.Parse(Console.ReadLine());
-
-            // Compare the number and the guess
-            while (number != guess)
+            int number = keygen.Next(MinValue, MaxValue);
+            Console.WriteLine($"The number to guess is {number}");
+            int guess = MinValue - 1;
+            while (guess != number && userAttempts < MaxAttempts)
             {
+                userAttempts++;
+                Console.WriteLine($"Guess attempt #{userAttempts}");
+                // Prompt the user to guess the number
+                Console.Write($"Enter your guess between {MinValue} and {MaxValue}: ");
+                guess = int.Parse(Console.ReadLine());
                 if (guess > number)
                 {
                     Console.WriteLine("Your guess is too high");
                 }
-                else
+                else if (guess < number)
                 {
                     Console.WriteLine("Your guess is too low");
                 }
-
-                Console.Write("Enter your guess: ");
-                guess = int.Parse(Console.ReadLine());
             }
-
-            // Display the result
-            Console.WriteLine("Yes, the number is " + number);
+            if (guess == number)
+            {
+                Console.WriteLine($"Yes, the number is {number} in {userAttempts} attempts.");
+            }
+            else
+            {
+                Console.WriteLine($"You have exceeded the number of {MaxAttempts} attempts allowed.");
+            }
         }
     }
 }
