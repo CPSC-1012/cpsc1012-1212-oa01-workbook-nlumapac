@@ -15,22 +15,30 @@ namespace Analysis
 
             while (numberOfStudents < TotalNumberOfStudents)
             {
+
                 Console.Write("Enter result (1=pass, 2=fail): ");
                 passOrFail = int.Parse(Console.ReadLine());
 
-                switch (passOrFail)
+                if (passOrFail == 1 || passOrFail == 2)
                 {
-                    case 1:
-                        totalPassed++;
-                        break;
-                    case 2:
-                        totalFailed++;
-                        break;
-                    default:
-                        break;
-                }
+                    switch (passOrFail)
+                    {
+                        case 1:
+                            totalPassed++;
+                            break;
+                        case 2:
+                            totalFailed++;
+                            break;
+                        default:
+                            break;
+                    }
 
-                numberOfStudents++;
+                    numberOfStudents++;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid result!");
+                }    
             }
 
             Console.WriteLine("");
