@@ -4,6 +4,22 @@
  * Input: Integer between 0 and 1000
  * 
  * Output: Sum of all inputted digits
+ * 
+ * Algorith:    Step 1) Prompt and read in the number
+ *              Step 2) Extract right most digit from number
+ *                      digit1 =  number % 10
+ *              Step 3) Extract right most digit from number
+ *                      number = number / 10
+ *              Step 4) Extract right most digit from number
+ *                      digit2 =  number % 10
+ *              Step 5) Remoe right most digit from the number
+ *                      number = number / 10
+ *              Step 6) Extract right most digit from number
+ *                      digit3 = number % 10
+ *              Step 7) Remove right most digit from the number
+ *                      number = number / 10
+ *              Step 8) Compute the sum of the digits as follows:
+ *                      sum = digit1 + digit2 + digit3
  */
 using System;
 
